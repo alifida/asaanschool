@@ -438,10 +438,10 @@ class Student extends Protected_Controller {
 		$admissionDate = $this->input->post('student_admission_date');
 		$student["admission_date"]= $admissionDate;
 			
-
+		//pre_d($student);
 		$response = $this->student->merge($student);
 
-
+		
 
 
 		if(is_numeric($response) || $response ==get_app_message ( "response.success" )){
