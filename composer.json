@@ -1,0 +1,9 @@
+{
+	"require" : {
+		"ext-bcmath" : "*",
+		"ext-mcrypt" : "*",
+		"ext-gd" : "*",
+		"cloudinary/cloudinary_php" : "^1.13",
+		"sendgrid/sendgrid" : "~5.0.9"
+	}
+}

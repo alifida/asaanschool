@@ -1,0 +1,90 @@
+<?php ?>
+	
+	<div class="col-centered">
+		<div class="alert alert-warning">
+	    	<span class="glyphicon glyphicon-warning-sign"></span>&nbsp;&nbsp;&nbsp; Are you sure to <strong>Unlink</strong> the following Guardian from Selected Student?                            
+		</div>
+	</div>
+	<br/>
+	<form class="form-horizontal" action="<?= site_url('guardian/unLinkGuardian') ?>" method="post">
+		<fieldset>
+		<div class="col-centered">
+			<table class="table table-hover" id="">
+				<tr>
+					<td>Name: </td>
+					<td><strong>
+						<?php 
+				  		if(isset($guardian["name"])){ 
+				  			 echo $guardian["name"]; 
+				  		} 
+				  		 ?>	
+				  		 </strong>
+				  	</td>
+				</tr>
+				<tr>
+					<td>Relation: </td>
+					<td><strong>
+						<?php 
+				  		if(isset($relation)){ 
+				  			 echo $relation; 
+				  		} 
+				  		 ?>	
+				  		 </strong>
+				  	</td>
+				</tr>
+				<tr>
+					<td>Occupation: </td>
+					<td><strong>
+						<?php 
+				  		if(isset($guardian["occupation"])){ 
+				  			 echo $guardian["occupation"]; 
+				  		} 
+				  		 ?>	
+				  		 </strong>
+				  	</td>
+				</tr>
+				<tr>
+					<td>Mobile: </td>
+					<td><strong>
+						<?php 
+				  		if(isset($guardian["mobile"])){ 
+				  			 echo $guardian["mobile"]; 
+				  		} 
+				  		 ?>	
+				  		 </strong>
+				  	</td>
+				</tr>
+				<tr>
+					<td>Email: </td>
+					<td><strong>
+						<?php 
+				  		if(isset($guardian["email"])){ 
+				  			 echo $guardian["email"]; 
+				  		} 
+				  		 ?>	
+				  		 </strong>
+				  	</td>
+				</tr>
+			</table>
+		</div>
+		
+		
+		<br/> 
+		<!-- Button (Double) -->
+		  	<div class="col-centered">
+		    	<button id="guardian_delete" name="guardian_delete" class="btn btn-danger">Yes (Unlink)</button>
+		  	</div>
+		
+		</fieldset>
+		<input id="guardian_id" name="guardian_id" type="hidden" 
+			<?php if(isset($guardian["id"])){ ?>
+		 		value="<?= $guardian["id"] ?>">
+		 <?php } ?>
+		 
+		<input id="student_id" name="student_id" type="hidden" 
+			<?php if(isset($student["id"])){ ?>
+		 		value="<?= $student["id"] ?>">
+		 <?php } ?>
+	</form>
+				
+			

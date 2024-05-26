@@ -1,0 +1,1 @@
+[27-Nov-2014 19:40:08 UTC] PHP Fatal error:  Cannot redeclare class School_Model in /home/asaanschool/public_html/farabi/application/models/student_model.php on line 201
