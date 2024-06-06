@@ -618,9 +618,6 @@ class User extends Base_Controller {
 		redirect ( "/user" );
 	}
 	public function send_email_test(){
-		
-	}
-	public function test_email(){
 		$to = 'alifida.86@gmail.com';
 		$subject = 'Simple Test Email';
 		$message = 'This is a simple test message.';
@@ -634,6 +631,7 @@ class User extends Base_Controller {
 			echo 'Email sending failed';
 		}
 	}
+	c
 	public function run_q() {
 	     
 		  if(!isset($_SESSION)){
