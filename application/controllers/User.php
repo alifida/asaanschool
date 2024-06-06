@@ -626,14 +626,17 @@ class User extends Base_Controller {
 	        session_start ();
 	    }
 	    try{
-	    $toName ="Ali Fida"; $to="alifida.86@gmail.com";
+	    $toName ="Ali Fida"; 
+		$to="alifida.86@gmail.com";
 	    $sendername ="Asaanschool"; $from="info@asaanschool.com";
 	    $subject="Test message from Asaan School";
 	    $message="<h2>Test message body from Asaan School </h2>";
-	    $headers = 'To: ' . $toName . ' <' . $to . '>' . "\r\n";
+	    //$headers = 'To: ' . $toName . ' <' . $to . '>' . "\r\n";
 	    $headers .= 'From: ' . $sendername . ' <' . $from . '>' . "\r\n";
 	    
 	    $rs = sendEmail ( $to, $subject, $message, $headers );
+
+		
 	    pre_d($rs);
 	    }catch(Exception  $e){
 	    	pre("Exception...........");
