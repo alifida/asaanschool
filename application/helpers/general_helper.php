@@ -45,7 +45,7 @@ if (! function_exists ( 'sendEmailVerificationCode' )) {
 		$from = get_app_message ( "sender.email.address" );
 		$to = $data ["email"];
 		$toName = $data ["school_name"];
-		$subject = "Asaanschool Sign-up Email Verification";
+		$subject = "Asaan School Sign-up Email Verification";
 		$message = "Hi " . $data ["school_name"] . ",";
 		$message = $message . "<br/><br/> We have got a signup request for your email i.e. <b>" . $data ["email"] . "</b>";
 		$message = $message . "";

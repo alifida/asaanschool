@@ -39,9 +39,9 @@ class Appconstants{
 	
 	
 		"sender.email.display.name"=>"Admin",
-		"sender.email.address"=>"asaanschool@gmail.com",
-		"sender.email.password"=>"window98",
-		"admin.email.address"=>"asaanschool@gmail.com",
+		"sender.email.address"=>"info@asaanschool.com",
+		"sender.email.password"=>"Fedora@10",
+		"admin.email.address"=>"info@asaanschool.com",
 		"admin.email.address2"=>"asaanschool@gmail.com",
 		"admin.email.address3"=>"alifida86@gmail.com",
 
