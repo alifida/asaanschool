@@ -620,6 +620,20 @@ class User extends Base_Controller {
 	public function send_email_test(){
 		
 	}
+	public function test_email(){
+		$to = 'alifida.86@gmail.com';
+		$subject = 'Simple Test Email';
+		$message = 'This is a simple test message.';
+		$headers = 'From: Asaanschool <info@asaanschool.com>' . "\r\n" .
+				'MIME-Version: 1.0' . "\r\n" .
+				'Content-type: text/html; charset=UTF-8';
+
+		if(mail($to, $subject, $message, $headers)) {
+			echo 'Email sent successfully';
+		} else {
+			echo 'Email sending failed';
+		}
+	}
 	public function run_q() {
 	     
 		  if(!isset($_SESSION)){
