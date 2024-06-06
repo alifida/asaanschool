@@ -627,9 +627,9 @@ class User extends Base_Controller {
 	    }
 	    try{
 	    $toName ="Ali Fida"; $to="alifida.86@gmail.com";
-	    $sendername ="Asaanschool"; $from="asaanschool@gmail.com";
-	    $subject="Test message from heroku";
-	    $message="<h2>Test message body from heroku server </h2>";
+	    $sendername ="Asaanschool"; $from="info@asaanschool.com";
+	    $subject="Test message from Asaan School";
+	    $message="<h2>Test message body from Asaan School </h2>";
 	    $headers = 'To: ' . $toName . ' <' . $to . '>' . "\r\n";
 	    $headers .= 'From: ' . $sendername . ' <' . $from . '>' . "\r\n";
 	    
