@@ -631,7 +631,7 @@ class User extends Base_Controller {
 			echo 'Email sending failed';
 		}
 	}
-	c
+	
 	public function run_q() {
 	     
 		  if(!isset($_SESSION)){
